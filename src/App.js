@@ -1,11 +1,26 @@
 import React from 'react';
-import './App.css';
+import {Container,Row, Col} from 'react-bootstrap';
+import './css/App.css';
+
+import Header from './components/header/Header';
+import Sportinfo from './components/sports-info/Sportinfo';
 
 function App() {
   return (
-    <div className="App">
-     <h1>sport</h1>
-    </div>
+
+    <Container fluid>
+        <Row>
+          <Col>
+            < Header/>  
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Sportinfo/>
+          </Col>
+        </Row>
+    </Container>
+    
   );
 }
 
